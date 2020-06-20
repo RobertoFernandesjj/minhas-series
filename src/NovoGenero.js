@@ -12,7 +12,7 @@ const NovoGenero = () => {
 
     const save = () => {
         axios
-            .post('/api/genres', {
+            .post('/api/genres/', {
              name
          })
             .then(res => {
@@ -20,7 +20,7 @@ const NovoGenero = () => {
         })
     }
     if (success) {
-        return <Redirect to='/generos'/>
+        return <Redirect to='/generos/'/>
     }
     
     return(
